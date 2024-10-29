@@ -9,7 +9,7 @@ class MailService {
 			secure: true,
 			auth: {
 				user: "react-app-olga@ukr.net",
-				pass: "cSa83QCDrV2FjBwU"
+				pass: "hYZfkqjW4NFKWUlk"
 			}
 		})
 	}
