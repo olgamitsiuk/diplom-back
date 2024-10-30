@@ -11,137 +11,142 @@ exports.seed = function (request, response) {
     });
 
     let one = new category();
-    one.name = "Гитары";
+    one.name = "Guitars";
     one.nameStr = "guitar";
     one.image = "/storage/category/guitar.png";
     one.subCat = [
         {
-            name: "Элeктроакустические гитары",
+            name: "Electroacoustic Guitars",
             nameStr: "electric-acoustic-guitar",
             img: '/storage/category/1/acoustic_gitar-50x50.png'
         },
         {
-            name: "Электрогитары",
+            name: "Electric Guitars",
             nameStr: "electric-guitar",
             img: '/storage/category/1/electric_gitar-50x50.png'
         },
         {
-            name: "Классические гитары",
+            name: "Classical Guitars",
             nameStr: "classical-guitar",
             img: '/storage/category/1/classic_gitar-50x50.png'
         },
         {
-            name: "Бас-гитары",
+            name: "Bass Guitars",
             nameStr: "bass-guitar",
             img: '/storage/category/1/bass-gitar-50x50.png'
         },
         {
-            name: "Аксессуары для гитар",
+            name: "Guitar Accessories",
             nameStr: "accessories",
             img: '/storage/category/1/case_gitar-50x50.png'
         }];
     one.save();
+
     let two = new category();
-    two.name = "Клавишные";
+    two.name = "Keyboards";
     two.nameStr = "keyboard-instrument";
     two.image = "/storage/category/keyboard-instrument.png";
     two.subCat = [
         {
-            name: "Цыфровые пианино и органы",
+            name: "Digital Pianos and Organs",
             nameStr: "digital-piano",
             img: '/storage/category/1/piano-50x50.png'
         },
         {
-            name: "Синтезаторы",
+            name: "Synthesizers",
             nameStr: "synthesizer",
             img: '/storage/category/1/synth-work-station-50x50.png'
         },
         {
-            name: "MIDI-клавиатуры",
+            name: "MIDI Keyboards",
             nameStr: "midi-keyboard",
             img: '/storage/category/1/midi-klav-50x50.png'
         },
         {
-            name: "Оборудование для клавишных интрументов",
+            name: "Keyboard Instrument Equipment",
             nameStr: "equipment-keyboard",
             img: '/storage/category/1/keypad-stands-50x50.png'
         }];
     two.save();
+
     let three = new category();
-    three.name = "Ударные";
+    three.name = "Percussion";
     three.nameStr = "percussion-instrument";
     three.image = "/storage/category/percussion-instrument.png";
     three.subCat = [
         {
-            name: "Акустические ударные",
+            name: "Acoustic Drums",
             nameStr: "acoustic-percussion",
             img: '/storage/category/1/akusticheskie-udarnye-50x50.png'
         },
         {
-            name: "Электронные ударные",
+            name: "Electronic Drums",
             nameStr: "electronic-percussion",
             img: '/storage/category/1/jelektronnye-udarnye-i-perkussija-50x50.png'
         },
         {
-            name: "Тарелки",
+            name: "Cymbals",
             nameStr: "plates",
             img: '/storage/category/1/tarelki-50x50.png'
         },
         {
-            name: "Аксессуары и комплектующие",
+            name: "Accessories and Parts",
             nameStr: "accessories",
             img: '/storage/category/1/aksessuary-i-komplektujushhie-50x50.png'
         }];
     three.save();
+
     let four = new category();
-    four.name = "Духовые";
+    four.name = "Wind Instruments";
     four.nameStr = "wind-instrument";
     four.image = "/storage/category/wind-instrument.png";
     four.subCat = [
         {
-            name: "Губные гармошки",
+            name: "Harmonicas",
             nameStr: "harmonica",
             img: '/storage/category/1/gubnye-garmoshki-50x50.png'
         },
         {
-            name: "Медные духовые",
+            name: "Brass Instruments",
             nameStr: "brass-wind-instruments",
             img: '/storage/category/1/aksessuary1-50x50.png'
         },
         {
-            name: "Аксессуары для духовых инструментов",
+            name: "Wind Instrument Accessories",
             nameStr: "accessories",
             img: '/storage/category/1/aksessuary1-50x50.png'
         }];
     four.save();
+
     let five = new category();
-    five.name = "Оборудование";
+    five.name = "Equipment";
     five.nameStr = "equipment";
     five.image = "/storage/category/equipment.png";
     five.subCat = [
         {
-            name: "Усилители, комбики, кабинеты",
+            name: "Amplifiers, Combos, Cabinets",
             nameStr: "amplifiers-combo-cabinets",
             img: '/storage/category/1/amp_combo-150x100.png'
         },
         {
-            name: "Педали эффектов и прцессоры",
+            name: "Effect Pedals and Processors",
             nameStr: "effect-pedals-and-processors",
             img: '/storage/category/1/pedal_effects-150x100.png'
         },
         {
-            name: "Тюнеры и метрономы",
+            name: "Tuners and Metronomes",
             nameStr: "tuners-and-metronomes",
             img: '/storage/category/1/tuner_metronom-150x100.png'
         },
         {
-            name: "Наушники и микрофоны",
+            name: "Headphones and Microphones",
             nameStr: "headphones-and-microphones",
             img: '/storage/category/1/microfon-50x50.png'
         }];
     five.save();
     response.send("Ok");
 }
+
 exports.getCategory = function (request, response) {
     console.log("Run GET");
     category.find({},
@@ -155,6 +160,7 @@ exports.getCategory = function (request, response) {
         }
     );
 }
+
 exports.getCategoryByName = function (request, response) {
     const name = request.params.name;
     category.find({ nameStr: name },
