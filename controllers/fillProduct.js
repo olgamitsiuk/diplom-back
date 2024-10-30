@@ -10,13 +10,13 @@ exports.seed = function (request, response) {
         }
     });
     let one = new model();
-    one.name = "Гитара электроаккустическая";
+    one.name = "Electroacoustic Guitar";
     one.model = "FENDER CD-60SCE BLACK";
     one.slug = one.name + ' ' + one.model;
     one.manufacturer = "FENDER";
     one.category = "guitar";
     one.subCategory = "electric-acoustic-guitar";
-    one.subCatName = 'Элeктроакустические гитары';
+    one.subCatName = 'Electroacoustic Guitars';
     one.new = "new";
     one.popular = "popular";
     one.price_action = 6120;
@@ -26,50 +26,51 @@ exports.seed = function (request, response) {
         big: ["/storage/product/1/1.jpg", "/storage/product/1/2.jpg", "/storage/product/1/3.jpg"],
         small: ["/storage/product/1/1-1.jpg", "/storage/product/1/2-1.jpg", "/storage/product/1/3-1.jpg"]
     };
-    one.description = "FENDER CD-60SCE BLACK — новая электроакустическая гитара вкорпусе дредноут от знаменитого" +
-        " американского производителя, оснащенная высококачественной электроникой."
-    one.description_full = "Верхняя дека CD-60SCE BLACK WN из цельной древесины ели," +
-        " что придает инструменту прекрасные акустические характеристики при любом стиле игры." +
-        " Нижняя дека и обечайка сделаны из махагони, что позволило не только получить эффектный внешний вид," +
-        " но и добиться сбалансированного звучания и впечатляющей громкости. Гриф профиля Fender Easy-to-Play" +
-        " также выполнен из махагони с однослойной черной окантовкой. Удобная форма грифа придется по душе" +
-        " как начинающим гитаристам, так и опытным профессиональным музыкантам. Накладка — орех, радиус 12″ (305мм)," +
-        " инкрустирована перламутровыми точками диаметром 3 мм. На грифе 20 ладов." +
-        "Пьезозвукосниматель Fishman с предусилителем и встроенным тюнером оснащен удобными регуляторами для настройки," +
-        " при этом сохраняется чистый, густой и насыщенный звук с прекрасным резонансом. Бридж выполнен из палисандра," +
-        " фурнитура — хромированная. Венецианский вырез с плавным изгибом дает удобный доступ к верхним ладам." +
-        " Розетка красиво оформлена перламутром.";
+    one.description = "FENDER CD-60SCE BLACK — a new electroacoustic guitar in dreadnought body style from the famous " +
+        "American manufacturer, equipped with high-quality electronics."
+    one.description_full = "The CD-60SCE BLACK WN features a solid spruce top, " +
+        "which gives the instrument excellent acoustic characteristics for any playing style. " +
+        "The back and sides are made of mahogany, which not only provides an impressive appearance " +
+        "but also achieves balanced sound and impressive volume. The Fender Easy-to-Play profile neck " +
+        "is also made of mahogany with a single-layer black binding. The comfortable neck shape will appeal " +
+        "to both beginning guitarists and experienced professional musicians. The fingerboard is walnut, with a 12″ radius (305mm), " +
+        "inlaid with 3mm pearl dots. The neck has 20 frets. " +
+        "The Fishman pickup with preamp and built-in tuner features convenient control knobs for adjustment, " +
+        "while maintaining clean, rich, and full sound with excellent resonance. The bridge is made of rosewood, " +
+        "and the hardware is chrome-plated. The Venetian cutaway with smooth curve provides easy access to upper frets. " +
+        "The rosette is beautifully decorated with mother of pearl.";
     one.characteristics = [
         {
-            name: "Тип",
-            value: "Электроакустичеcкие"
+            name: "Type",
+            value: "Electroacoustic"
         },
         {
-            name: "Количество струн",
+            name: "Number of strings",
             value: "6"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Количество ладов",
+            name: "Number of frets",
             value: "20"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     one.save();
+
     let two = new model();
-    two.name = "Электрогитара";
+    two.name = "Electric Guitar";
     two.model = "IBANEZ GRG140 BKN";
     two.slug = two.name + ' ' + two.model;
     two.manufacturer = "IBANEZ";
     two.category = "guitar";
     two.subCategory = "electric-guitar";
-    two.subCatName = 'Электрогитары';
+    two.subCatName = 'Electric Guitars';
     two.new = "";
     two.popular = "popular";
     two.price_normal = 7125;
@@ -78,47 +79,48 @@ exports.seed = function (request, response) {
         big: ["/storage/product/2/1.jpg", "/storage/product/2/2.jpg", "/storage/product/2/3.jpg"],
         small: ["/storage/product/2/1-1.jpg", "/storage/product/2/2-1.jpg", "/storage/product/2/3-1.jpg"]
     };
-    two.description = "Компания IBANEZ представляет электрогитару GRG140. " +
-        "Эта электрогитара является фаворитом в своем классе. Свое положение она завоевала" +
-        " качеством звука и практичностью в использовании. Электрогитара GRG140 подойдет как новичку, так и более опытному музыканту.";
-    two.description_full = "IBANEZ GRG140-BKN - это 6-струнная электрогитара с отличным звучанием." +
-        " Компания IBANEZ постаралась и смогла выразить стиль, четкость звука и качество сборки.Гитара имеет 24 лада." +
-        " Гриф гитары не очень широкий. Эта особенность очень удобна для всех, так как предоставляет отличный доступ к верхним ладам." +
-        " Гриф изготовлен из клена. Накладка на грифе сделана из палисандра. Корпус изготовлен из липы. Фурнитура хромированная." +
-        " Модель имеет схему звукоснимателей H-S-S, что отлично подходит для разных стилей музыки. " +
-        "Электрогитара имеет очень хороший звук для гитар этого класса, отлично сочетает в себе качество и приемлемую цену. " +
-        "IBANEZ GRG140 - отличный выбор для новичков и любителей.";
+    two.description = "IBANEZ presents the GRG140 electric guitar. " +
+        "This electric guitar is a favorite in its class. It has earned its position through " +
+        "sound quality and practicality in use. The GRG140 electric guitar is suitable for both beginners and more experienced musicians.";
+    two.description_full = "IBANEZ GRG140-BKN is a 6-string electric guitar with excellent sound. " +
+        "IBANEZ has worked hard and managed to express style, sound clarity, and build quality. The guitar has 24 frets. " +
+        "The guitar neck is not very wide. This feature is very convenient for everyone as it provides excellent access to the upper frets. " +
+        "The neck is made of maple. The fingerboard is made of rosewood. The body is made of basswood. The hardware is chrome-plated. " +
+        "The model has an H-S-S pickup configuration, which is excellent for different music styles. " +
+        "The electric guitar has very good sound for guitars in this class, perfectly combining quality and reasonable price. " +
+        "IBANEZ GRG140 is an excellent choice for beginners and enthusiasts.";
     two.characteristics = [
         {
-            name: "Тип",
-            value: "Электрогитара"
+            name: "Type",
+            value: "Electric Guitar"
         },
         {
-            name: "Количество струн",
+            name: "Number of strings",
             value: "6"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Количество ладов",
+            name: "Number of frets",
             value: "24"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     two.save();
+
     let three = new model();
-    three.name = "Гитара";
+    three.name = "Guitar";
     three.model = "Fender PLAYER TELECASTER";
     three.slug = three.name + ' ' + three.model;
     three.manufacturer = "Fender";
     three.category = "guitar";
     three.subCategory = "classical-guitar";
-    three.subCatName = 'Классические гитары';
+    three.subCatName = 'Classical Guitars';
     three.new = "new";
     three.popular = "";
     three.price_action = 23425;
@@ -128,52 +130,52 @@ exports.seed = function (request, response) {
         big: ["/storage/product/3/1.jpg", "/storage/product/3/2.jpg", "/storage/product/3/3.jpg"],
         small: ["/storage/product/3/1-1.jpg", "/storage/product/3/2-1.jpg", "/storage/product/3/3-1.jpg"]
     };
-    three.description = "Идеально подходящая для сильной музыкальной атаки электрогитара" +
-        " Fender Player Telecaster HH PF – это чистый Fender до мозга костей. " +
-        "Ощущение, стиль и, самое главное, звук – все они здесь ждут, " +
-        "пока вы заставите их шептать или кричать для вашей музыки. ";
-    three.description_full = "IИнструмент достаточно гибкий, чтобы справиться практически со всем, " +
-        "что вы можете создать, и достаточно прочный, чтобы пережить любое выступление." +
-        " Эта рабочая лошадка – верный товарищ вашего музыкального видения. Разработанные для аутентичного" +
-        " звучания Fender звукосниматели серии Player стоят одной ногой в прошлом, но смотрят в будущее." +
-        "Бридж Telecaster струны-сквозь-корпус обладает седлами из изогнутого металла (bent-steel), " +
-        "чтобы немного оживить ваш тон. Гриф разработан для удобства и производительности. " +
-        "С профилем «Modern C» и гладким покрытием задней части он идеально подходит " +
-        "практически для любого стиля игры. Дополнительный лад дает доступ к четырем октавам музыкальных возможностей." +
-        " Каждая электрогитара серии Player Telecaster включает пластину на грифе с тисненой буквой «F»," +
-        " не оставляя никаких сомнений касательно происхождения инструмента.";
+    three.description = "Perfect for strong musical attack, the Fender Player Telecaster HH PF electric guitar " +
+        "is pure Fender to its core. The feel, style, and most importantly, the sound – they're all here waiting " +
+        "for you to make them whisper or scream for your music.";
+    three.description_full = "The instrument is flexible enough to handle almost anything " +
+        "you can create and sturdy enough to survive any performance. " +
+        "This workhorse is a faithful companion to your musical vision. Designed for authentic " +
+        "Fender sound, the Player series pickups stand with one foot in the past but look to the future. " +
+        "The Telecaster bridge with strings-through-body design features bent-steel saddles " +
+        "to add some life to your tone. The neck is designed for comfort and performance. " +
+        "With its 'Modern C' profile and smooth back finish, it's perfect " +
+        "for virtually any playing style. The additional fret gives access to four octaves of musical possibilities. " +
+        "Every Player Telecaster series electric guitar includes a neck plate with an embossed 'F' letter, " +
+        "leaving no doubt about the instrument's origin.";
     three.characteristics = [
         {
-            name: "Тип",
-            value: "Электрогитара"
+            name: "Type",
+            value: "Electric Guitar"
         },
         {
-            name: "Количество струн",
+            name: "Number of strings",
             value: "6"
         },
         {
-            name: "Цвет",
+            name: "Color",
             value: "3-Tone Sunburst"
         },
         {
-            name: "Количество ладов",
+            name: "Number of frets",
             value: "22"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     three.save();
+
     let four = new model();
-    four.name = "Бас-гитара";
+    four.name = "Bass Guitar";
     four.model = "IBANEZ GSR180 BSB";
     four.slug = four.name + ' ' + four.model;
     four.manufacturer = "IBANEZ";
     four.category = "guitar";
     four.subCategory = "bass-guitar";
-    four.subCatName = 'Бас-гитары';
-    four.new = "";
+    four.subCatName = 'Bass Guitars';
+    four.new = "new";
     four.popular = "";
     four.price_action = 23425;
     four.price_normal = 24525;
@@ -182,43 +184,42 @@ exports.seed = function (request, response) {
         big: ["/storage/product/4/1.png", "/storage/product/4/2.png", "/storage/product/4/3.png"],
         small: ["/storage/product/4/1-1.png", "/storage/product/4/2-1.png", "/storage/product/4/3-1.png"]
     };
-    four.description = "IBANEZ GSR180 представляет собой удобный и красивый инструмент, изготовленный с той же тщательностью и по тем же стандартам, что и модели IBANEZ топ-класса ";
-    four.description_full = "IBANEZ GSR180 представляет собой удобный и красивый инструмент, изготовленный с той же тщательностью и по тем же стандартам, что и модели IBANEZ топ-класса. Этот инструмент позволит вам отточить свою технику и выработать собственную манеру игры. GSR180 отлично проявит себя не только при домашних занятиях, репетициях или клубных выступлениях, но и на больших концертных площадках." +
-        "Приобретая свою первую бас-гитару, начинающие музыканты нередко выбирают необычные инструменты броских цветов и форм, особенно именные или подписные модели своих кумиров. Решение не самое удачное, ведь каждый состоявшийся музыкант имеет собственную манеру и создает свою именную модель основываясь на личных предпочтениях." +
-        "Для человека, который хочет учиться играть нужен лаконичный, но качественный инструмент на котором он сумеет развить навыки и сформировать свою манеру. Именно таким инструментом и является IBANEZ GSR180 BSB"
-
-
+    four.description = "IBANEZ GSR180 is a comfortable and beautiful instrument, manufactured with the same care and to the same standards as IBANEZ top-class models.";
+    four.description_full = "IBANEZ GSR180 is a comfortable and beautiful instrument, manufactured with the same care and to the same standards as IBANEZ top-class models. This instrument will allow you to refine your technique and develop your own playing style. The GSR180 will excel not only in home practice, rehearsals, or club performances but also on large concert venues. " +
+        "When buying their first bass guitar, beginning musicians often choose unusual instruments with flashy colors and shapes, especially signature models of their idols. This isn't the best decision, as every established musician has their own style and creates their signature model based on personal preferences. " +
+        "For someone who wants to learn to play, you need a concise but quality instrument on which they can develop skills and form their style. The IBANEZ GSR180 BSB is exactly such an instrument.";
     four.characteristics = [
         {
-            name: "Тип",
-            value: "Бас-гитары"
+            name: "Type",
+            value: "Bass Guitar"
         },
         {
-            name: "Количество струн",
+            name: "Number of strings",
             value: "4"
         },
         {
-            name: "Цвет",
+            name: "Color",
             value: "Sunburst"
         },
         {
-            name: "Количество ладов",
+            name: "Number of frets",
             value: "22"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     four.save();
+
     let five = new model();
-    five.name = "Стойка гитарная";
+    five.name = "Guitar Stand";
     five.model = "FENDER DELUXE HANGING GUITAR STAND BLACK/RED";
     five.slug = five.name + ' ' + five.model;
     five.manufacturer = "Fender";
     five.category = "guitar";
     five.subCategory = "accessories";
-    five.subCatName = 'Аксессуары для гитар';
+    five.subCatName = 'Guitar Accessories';
     five.new = "";
     five.popular = "";
     five.price_action = '';
@@ -228,39 +229,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/5/1.png", "/storage/product/5/2.png", "/storage/product/5/3.png"],
         small: ["/storage/product/5/1-1.png", "/storage/product/5/2-1.png", "/storage/product/5/3-1.png"]
     };
-    five.description = "FENDER DELUXE HANGING GUITAR STAND BLACK/RED – напольная гитарная стойка, которая надежно сохранит вашу акустическую, электро- или бас-гитару.";
-    five.description_full = "FENDER DELUXE HANGING GUITAR STAND BLACK/RED – напольная гитарная стойка, которая надежно сохранит вашу акустическую, электро- или бас-гитару. Наряду с портативностью и рациональностью, стойка имеет покрытие из мягкой подкладки, что идеально подходит для гитар с чувствительной к царапинам отделкой, к примеру как с покрытием из нитроцеллюлозы. Прочная металлическая конструкция, удобна в транспортировке.";
+    five.description = "FENDER DELUXE HANGING GUITAR STAND BLACK/RED – a floor guitar stand that will safely hold your acoustic, electric, or bass guitar.";
+    five.description_full = "FENDER DELUXE HANGING GUITAR STAND BLACK/RED – a floor guitar stand that will safely hold your acoustic, electric, or bass guitar. Along with portability and practicality, the stand features soft padding covering, which is ideal for guitars with scratch-sensitive finishes, such as nitrocellulose finishes. Sturdy metal construction, convenient for transportation.";
     five.characteristics = [
         {
-            name: "Тип",
-            value: "Стойки"
+            name: "Type",
+            value: "Stands"
         },
         {
-            name: "Количество гитар",
+            name: "Guitar capacity",
             value: "1"
         },
         {
-            name: "Цвет",
-            value: "Черно-красный"
+            name: "Color",
+            value: "Black/Red"
         },
         {
-            name: "Материал",
-            value: "Металл"
+            name: "Material",
+            value: "Metal"
         },
         {
-            name: "Вес",
-            value: "1,6 кг"
+            name: "Weight",
+            value: "1.6 kg"
         },
     ]
     five.save();
+
     let six = new model();
-    six.name = "Малий барабан";
+    six.name = "Snare Drum";
     six.model = "TAMA AW-455 LIMITED MASTERCRAFT ARTWOOD";
-    six.slug = one.name + ' ' + one.model;
+    six.slug = six.name + ' ' + six.model;
     six.manufacturer = "TAMA";
     six.category = "percussion-instrument";
     six.subCategory = "acoustic-percussion";
-    six.subCatName = 'Акустические ударные';
+    six.subCatName = 'Acoustic Drums';
     six.new = "new";
     six.popular = "";
     six.price_action = 31920;
@@ -270,83 +272,84 @@ exports.seed = function (request, response) {
         big: ["/storage/product/6/1.png", "/storage/product/6/2.png", "/storage/product/6/3.png"],
         small: ["/storage/product/6/1-1.png", "/storage/product/6/2-1.png", "/storage/product/6/3-1.png"]
     };
-    six.description = "Tama AW-455 Limited Mastercraft Artwood – малий барабан, лімітованої серії 50th Anniversary, розмір 14x5, товщина корпусу – 9 мм, матеріал – 6-шарова береза з інкрустацією по центру, колір – натуральний."
-    six.description_full = "Корпус з берези товщиною 9 мм/6 шарів забезпечує чіткий звук низьких та середніх частот та чітку проєкцію." +
-        "Для детального та чутливого відгуку барабан оснащений унікальним фільтром Roller Action Strainer від TAMA, інноваційною конструкцією підструнника з повним контактом, в якій використовується один важіль увімкнення/вимкнення та подвійні напрямні ролики для простого та універсального регулювання. Ця точна копія оригінального малого барабана Mastercraft Artwood від TAMA – напрочуд гарне святкування 50-річчя TAMA." +
-        "9 мм, 6-шаровий суцільно-березовий корпус з дерев'яною вставкою по центру 9-міліметровий 6-шаровий корпус All Birch Shell з дерев'яною вставкою по центру отримав визнання за свої глибокі низькі частоти та чудову звукову проєкцію завдяки корпусу завтовшки 9 мм. Художній вигляд дерев'яної вставки, яка використовувалася лише в першій моделі, також додає особливого шарму." +
-        "Литі обручі (10 отворів). Для досягнення чіткої атаки та послідовного налаштування моделі малого барабана Mastercraft на початку 1980-х років оснащувалися литими обручами з 10 отворами, що було незвичайно для того часу. Крім того, ці спеціальні моделі, присвячені 50-річчю, включають копію оригінального бічного обруча малого барабана зі збільшеним вікном для підструнника. 18-прядні довгі підструнники з вуглецевої сталі. Роликовий фільтр. Розроблений як повноконтактна система підструнника, інноваційний фільтр Roller Action Strainer від TAMA забезпечує надзвичайно детальний контроль над тоном та чутливістю малого барабана."
+    six.description = "Tama AW-455 Limited Mastercraft Artwood – a snare drum from the limited 50th Anniversary series, 14x5 size, 9mm shell thickness, made of 6-ply birch with center inlay, natural finish."
+    six.description_full = "The 9mm/6-ply birch shell provides clear low and mid-frequency sound with precise projection. " +
+        "For detailed and sensitive response, the drum is equipped with TAMA's unique Roller Action Strainer, an innovative full-contact snare design that uses a single on/off lever and dual guide rollers for simple and versatile adjustment. This precise replica of the original TAMA Mastercraft Artwood snare drum is a remarkably beautiful celebration of TAMA's 50th anniversary. " +
+        "The 9mm, 6-ply all-birch shell with wooden center inlay has gained recognition for its deep low frequencies and excellent sound projection thanks to its 9mm thick shell. The artistic appearance of the wooden inlay, which was only used in the first model, also adds special charm. " +
+        "Die-cast hoops (10 lugs). To achieve clear attack and consistent tuning, the Mastercraft snare models in the early 1980s were equipped with 10-lug die-cast hoops, which was unusual for that time. Additionally, these special 50th-anniversary models include a replica of the original snare side hoop with an enlarged snare window. 18-strand carbon steel snare wires. Roller strainer. Designed as a full-contact snare system, TAMA's innovative Roller Action Strainer provides extremely detailed control over the snare drum's tone and sensitivity.";
     six.characteristics = [
         {
-            name: "Тип",
-            value: "Малий барабан"
+            name: "Type",
+            value: "Snare Drum"
         },
         {
-            name: "Серія",
+            name: "Series",
             value: "Mastercraft"
         },
         {
-            name: "Матеріал",
-            value: "Береза"
+            name: "Material",
+            value: "Birch"
         },
         {
-            name: "Колір",
-            value: "Натуральний"
+            name: "Color",
+            value: "Natural"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     six.save();
     let seven = new model();
-    seven.name = "Электронная ударная установка";
+    seven.name = "Electronic Drum Kit";
     seven.model = "CARLSBRO CSD130";
     seven.slug = seven.name + ' ' + seven.model;
     seven.manufacturer = "CARLSBRO";
     seven.category = "percussion-instrument";
     seven.subCategory = "electronic-percussion";
-    seven.subCatName = 'Электронные ударные';
+    seven.subCatName = 'Electronic Drums';
     seven.new = "";
     seven.popular = "popular";
     seven.price_normal = 14616;
-    seven.sale = "";
+    seven.sale = "new";
     seven.image = {
         big: ["/storage/product/7/1.png", "/storage/product/7/2.png", "/storage/product/7/3.png"],
         small: ["/storage/product/7/1-1.png", "/storage/product/7/2-1.png", "/storage/product/7/3-1.png"]
     };
-    seven.description = "Основные особенности и преимущества CARLSBRO CSD130: Компактная (в сложенном положении занимает места не больше, чем ПК), легкая, простая в использовании";
-    seven.description_full = "CARLSBRO CSD130 была создана специально для начинающего дарования. На борту CSD130 250 перкуссионных сэмплов и 20 пресетов. Если стандартные сэмплы по какой-то причине вас не устраивают – не беда! Ведь по-настоящему любые электронные ударные установки раскрываются именно при подключению к компьютеру и использованию программ типа Addictive Drums, EZ Drummer, FXpansion BFD3 и т. п. Перед вами предстает целая бесконечность вариаций барабанных звуков, которую благодаря Carlsbro можно использовать намного более элегантно, чем при помощи миди-клавиатуры. CARLSBRO CSD130 – это замечательный стартовый музыкальный инструмент для всей семьи.";
+    seven.description = "Key features and advantages of CARLSBRO CSD130: Compact (when folded takes up no more space than a PC), lightweight, and easy to use";
+    seven.description_full = "The CARLSBRO CSD130 was created specifically for the beginning talent. The CSD130 features 250 percussion samples and 20 presets. If the standard samples don't suit you for some reason – no problem! After all, electronic drum kits truly reveal their potential when connected to a computer and using programs like Addictive Drums, EZ Drummer, FXpansion BFD3, etc. You're presented with an endless variety of drum sounds, which thanks to Carlsbro can be used much more elegantly than with a MIDI keyboard. CARLSBRO CSD130 is a wonderful starter musical instrument for the whole family.";
     seven.characteristics = [
         {
-            name: "Категория",
-            value: "Электронная установка"
+            name: "Category",
+            value: "Electronic Kit"
         },
         {
-            name: "Количество пэдов барабанов",
+            name: "Number of drum pads",
             value: "5"
         },
         {
-            name: "Количество пэдов тарелок",
+            name: "Number of cymbal pads",
             value: "3"
         },
         {
-            name: "Тип пэдов",
-            value: "Резиновые"
+            name: "Pad type",
+            value: "Rubber"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     seven.save();
+
     let eight = new model();
-    eight.name = "Набор тарелок";
+    eight.name = "Cymbal Set";
     eight.model = "ZILDJIAN A CUSTOM SET 5 PACK";
     eight.slug = eight.name + ' ' + eight.model;
     eight.manufacturer = "ZILDJIAN";
     eight.category = "percussion-instrument";
     eight.subCategory = "plates";
-    eight.subCatName = 'Тарелки';
+    eight.subCatName = 'Cymbals';
     eight.new = "";
     eight.popular = "";
     eight.price_action = 23425;
@@ -356,39 +359,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/8/1.png", "/storage/product/8/2.png", "/storage/product/8/3.png"],
         small: ["/storage/product/8/1-1.png", "/storage/product/8/2-1.png", "/storage/product/8/3-1.png"]
     };
-    eight.description = "ZILDJIAN A CUSTOM SET 5 PACK – яркие, воздушные и очень отзывчивые тарелки с коротким затуханием звука.";
-    eight.description_full = "Узнаваемые благодаря своему удивительному покрытию бриллиант, тарелки A Custom отличаются уникальными тональными выемками и низкими профилями. Вместе эти характеристики обеспечивают плавный и яркий, якобы стеклянный звук с большей отдачей при ударе. Именно эти качества сделали звучание тарелок A Custom особенно востребованным в студии.";
+    eight.description = "ZILDJIAN A CUSTOM SET 5 PACK – bright, airy, and highly responsive cymbals with short sound decay.";
+    eight.description_full = "Recognizable by their amazing brilliant finish, A Custom cymbals feature unique tonal grooves and low profiles. Together these characteristics provide a smooth and bright, almost glass-like sound with greater response upon impact. These qualities have made A Custom cymbals particularly sought after in the studio.";
     eight.characteristics = [
         {
-            name: "Вид",
-            value: "Набор"
+            name: "Type",
+            value: "Set"
         },
         {
-            name: "Серия",
+            name: "Series",
             value: "A Custom"
         },
         {
-            name: "В наборе",
+            name: "Included",
             value: '14" HiHat; 16" Crash; 18" Crash; 20" Ride'
         },
         {
-            name: "Толщина",
+            name: "Thickness",
             value: "Medium Thin/Medium"
         },
         {
-            name: "Гарантия",
-            value: "24 месяцев"
+            name: "Warranty",
+            value: "24 months"
         },
     ]
     eight.save();
+
     let nine = new model();
-    nine.name = "Замок для подструнника";
+    nine.name = "Snare Strainer Lock";
     nine.model = "TAMA MCS70B";
     nine.slug = nine.name + ' ' + nine.model;
     nine.manufacturer = "TAMA";
     nine.category = "percussion-instrument";
     nine.subCategory = "accessories";
-    nine.subCatName = 'Аксессуары и комплектующие';
+    nine.subCatName = 'Accessories and Parts';
     nine.new = "";
     nine.popular = "";
     nine.price_action = 370;
@@ -398,39 +402,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/9/1.png", "/storage/product/9/2.png", "/storage/product/9/3.png"],
         small: ["/storage/product/9/1-1.png", "/storage/product/9/2-1.png", "/storage/product/9/3-1.png"]
     };
-    nine.description = "TAMA MCS70В – замок для подструнника (обратная часть) под малый барабан. Расстояние между отверстиями составляет 24 мм.";
-    nine.description_full = "TAMA MCS70В – замок для подструнника (обратная часть) под малый барабан. Расстояние между отверстиями составляет 24 мм.";
+    nine.description = "TAMA MCS70B – snare strainer lock (reverse part) for snare drum. The distance between holes is 24 mm.";
+    nine.description_full = "TAMA MCS70B – snare strainer lock (reverse part) for snare drum. The distance between holes is 24 mm.";
     nine.characteristics = [
         {
-            name: "Назначение",
-            value: "Для малых барабанов"
+            name: "Purpose",
+            value: "For snare drums"
         },
         {
-            name: "Материал",
-            value: "Металл"
+            name: "Material",
+            value: "Metal"
         },
         {
-            name: "Цвет",
-            value: "Xpom"
+            name: "Color",
+            value: "Chrome"
         },
         {
-            name: "Размер товара",
-            value: "5 х 4 х 1.3 см"
+            name: "Product size",
+            value: "5 x 4 x 1.3 cm"
         },
         {
-            name: "Вес без упаковки",
-            value: "0,1 кг"
+            name: "Weight without packaging",
+            value: "0.1 kg"
         },
     ]
     nine.save();
+
     let ten = new model();
-    ten.name = "Губная гармошка";
+    ten.name = "Harmonica";
     ten.model = "SUZUKI MR-200 C";
     ten.slug = ten.name + ' ' + ten.model;
     ten.manufacturer = "SUZUKI";
     ten.category = "wind-instrument";
     ten.subCategory = "harmonica";
-    ten.subCatName = 'Губные гармошки';
+    ten.subCatName = 'Harmonicas';
     ten.new = "";
     ten.popular = "";
     ten.price_action = '';
@@ -440,39 +445,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/10/1.png", "/storage/product/10/2.png", "/storage/product/10/3.png"],
         small: ["/storage/product/10/1-1.png", "/storage/product/10/2-1.png", "/storage/product/10/3-1.png"]
     };
-    ten.description = "Suzuki MR-200 C – диатоническая губная гармошка, тональность С, 10 отверстий, стальные крышки, язычки из композитного сплава фосфорной бронзы, кейс в комплекте.";
-    ten.description_full = "У губной гармошки Harpmaster простой в использовании, свободный дизайн, твердый корпус из ABS и сфокусированные отверстия для нот. Изгибные лазерные язычки из композитного сплава фосфорной бронзы создают ясность и насыщенные, мягкие тона, которые вы ожидаете от гораздо более дорогих гармоник. Классические крышки предлагают внешний вид традиционной гармошки и изготовлены из прочной полированной нержавеющей стали.";
+    ten.description = "Suzuki MR-200 C – diatonic harmonica, key of C, 10 holes, steel covers, phosphor bronze composite reeds, case included.";
+    ten.description_full = "The Harpmaster harmonica features an easy-to-use, free design, solid ABS body, and focused note holes. The laser-bent reeds made of phosphor bronze composite create clarity and rich, soft tones that you'd expect from much more expensive harmonicas. The classic covers offer the look of a traditional harmonica and are made of durable polished stainless steel.";
     ten.characteristics = [
         {
-            name: "Тип",
-            value: "Диатоническая"
+            name: "Type",
+            value: "Diatonic"
         },
         {
-            name: "Количество язычков",
+            name: "Number of reeds",
             value: "20"
         },
         {
-            name: "Цвет",
-            value: "Серебряный"
+            name: "Color",
+            value: "Silver"
         },
         {
-            name: "Тональность",
-            value: "C (До мажор)"
+            name: "Key",
+            value: "C (C major)"
         },
         {
-            name: "Размеры товара",
-            value: "101 x 26 x 20 мм"
+            name: "Product dimensions",
+            value: "101 x 26 x 20 mm"
         },
     ]
     ten.save();
+
     let eleven = new model();
-    eleven.name = "Труба Bb";
+    eleven.name = "Bb Trumpet";
     eleven.model = "Gebr.Stolze TR-100G";
     eleven.slug = eleven.name + ' ' + eleven.model;
     eleven.manufacturer = "Stolze";
     eleven.category = "wind-instrument";
     eleven.subCategory = "brass-wind-instruments";
-    eleven.subCatName = 'Медные духовые';
+    eleven.subCatName = 'Brass Instruments';
     eleven.new = "";
     eleven.popular = "";
     eleven.price_action = '';
@@ -482,31 +488,32 @@ exports.seed = function (request, response) {
         big: ["/storage/product/11/1.jpg", "/storage/product/11/2.jpg", "/storage/product/11/3.jpg"],
         small: ["/storage/product/11/1-1.jpg", "/storage/product/11/2-1.jpg", "/storage/product/11/3-1.jpg"]
     };
-    eleven.description = "Gebr.Stolze TR-100G - Труба Bb"
-    eleven.description_full = "Корпус, мундштучная трубка и раструб - латунь. Помпы - мельхиор. Диаметр раструба 123 мм. Золотой антикварный лак. Мензура 11.65 мм. Облегчённый футляр. Дизайн разработан в США. Пружины и винтики из США";
+    eleven.description = "Gebr.Stolze TR-100G - Bb Trumpet"
+    eleven.description_full = "Body, mouthpipe, and bell - brass. Valves - nickel silver. Bell diameter 123 mm. Gold antique lacquer. Bore size 11.65 mm. Lightweight case. Design developed in the USA. Springs and screws from USA";
     eleven.characteristics = [
         {
-            name: "Корпус",
-            value: "Латунь"
+            name: "Body",
+            value: "Brass"
         },
         {
-            name: "Помпы",
-            value: "Мельхиор"
+            name: "Valves",
+            value: "Nickel silver"
         },
         {
-            name: "Диаметр раструб",
-            value: "123 мм"
+            name: "Bell diameter",
+            value: "123 mm"
         }
     ]
     eleven.save();
+
     let twelve = new model();
-    twelve.name = "Aльт-саксофон";
+    twelve.name = "Alto Saxophone";
     twelve.model = "Stephan Weis AS-100G";
     twelve.slug = twelve.name + ' ' + twelve.model;
     twelve.manufacturer = "Stephan Weis";
     twelve.category = "wind-instrument";
     twelve.subCategory = "brass-wind-instruments";
-    twelve.subCatName = 'Медные духовые';
+    twelve.subCatName = 'Brass Instruments';
     twelve.new = "";
     twelve.popular = "";
     twelve.price_normal = 7125;
@@ -515,31 +522,32 @@ exports.seed = function (request, response) {
         big: ["/storage/product/12/1.jpg", "/storage/product/12/2.jpg", "/storage/product/12/3.jpg"],
         small: ["/storage/product/12/1-1.jpg", "/storage/product/12/2-1.jpg", "/storage/product/12/3-1.jpg"]
     };
-    twelve.description = "Stephan Weis AS-100G - альт-саксофон";
-    twelve.description_full = "Корпус - латунь. Золотой лак. Облегчённый футляр. Дизайн разработан в США. Подушки сделаны в Италии. Пружины и винтики из США";
+    twelve.description = "Stephan Weis AS-100G - alto saxophone";
+    twelve.description_full = "Body - brass. Gold lacquer finish. Lightweight case. Design developed in the USA. Pads made in Italy. Springs and screws from USA";
     twelve.characteristics = [
         {
-            name: "Корпус",
-            value: "латунь"
+            name: "Body",
+            value: "Brass"
         },
         {
-            name: "Цвет",
-            value: "Золотой лак"
+            name: "Color",
+            value: "Gold lacquer"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     twelve.save();
+
     let thirteen = new model();
-    thirteen.name = "Держатель для губных гармошек";
+    thirteen.name = "Harmonica Holder";
     thirteen.model = "SUZUKI SHH-10R";
     thirteen.slug = thirteen.name + ' ' + thirteen.model;
     thirteen.manufacturer = "SUZUKI";
     thirteen.category = "wind-instrument";
     thirteen.subCategory = "accessories";
-    thirteen.subCatName = 'Аксессуары для духовых инструментов';
+    thirteen.subCatName = 'Wind Instrument Accessories';
     thirteen.new = "";
     thirteen.popular = "";
     thirteen.price_normal = 525;
@@ -548,40 +556,41 @@ exports.seed = function (request, response) {
         big: ["/storage/product/13/1.png", "/storage/product/13/2.png", "/storage/product/13/3.png"],
         small: ["/storage/product/13/1-1.png", "/storage/product/13/2-1.png", "/storage/product/13/3-1.png"]
     };
-    thirteen.description = "Основные особенности Suzuki SHH-10R: Подходит для всех диатонических, хроматических, октавных и других гармошек с 10 отверстиями.";
-    thirteen.description_full = "Suzuki SHH-10R – держатель губной гармошки с 10 отверстиями, регулируемая конструкция. Это профессиональный держатель для губной гармошки дает вам свободу действий! Гармошка легко устанавливается. Держатель можно настроить так, чтобы он соответствовал сочетанию разных стилей игры.";
+    thirteen.description = "Main features of Suzuki SHH-10R: Suitable for all diatonic, chromatic, octave, and other 10-hole harmonicas.";
+    thirteen.description_full = "Suzuki SHH-10R – 10-hole harmonica holder with adjustable construction. This professional harmonica holder gives you freedom of action! The harmonica installs easily. The holder can be adjusted to accommodate different playing styles.";
     thirteen.characteristics = [
         {
-            name: "Категория",
-            value: "Держатели"
+            name: "Category",
+            value: "Holders"
         },
         {
-            name: "Назначение",
-            value: "Для губных гармошек"
+            name: "Purpose",
+            value: "For harmonicas"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Дополнительно",
-            value: "Регулируемая высота"
+            name: "Additional features",
+            value: "Adjustable height"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     thirteen.save();
+
     let fourteen = new model();
-    fourteen.name = "Гитарный комбоусилитель";
+    fourteen.name = "Guitar Combo Amplifier";
     fourteen.model = "FENDER ACOUSTASONIC 15";
     fourteen.slug = fourteen.name + ' ' + fourteen.model;
     fourteen.manufacturer = "Fender";
     fourteen.category = "equipment";
     fourteen.subCategory = "amplifiers-combo-cabinets";
-    fourteen.subCatName = 'Усилители, комбики, кабинеты';
-    fourteen.new = "";
+    fourteen.subCatName = 'Amplifiers, Combos, Cabinets';
+    fourteen.new = "new";
     fourteen.popular = "";
     fourteen.price_normal = 7770;
     fourteen.sale = "sale";
@@ -589,40 +598,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/14/1.png", "/storage/product/14/2.png", "/storage/product/14/3.png"],
         small: ["/storage/product/14/1-1.png", "/storage/product/14/2-1.png", "/storage/product/14/3-1.png"]
     };
-    fourteen.description = "FENDER ACOUSTASONIC 15 представляет собой мобильное и эффективное решение для подзвучивания электроакустической гитары и вокального микрофона, обладающее гибкостью и простотой, достаточными для применения в самых разнообразных музыкальных инсталляциях.";
-    fourteen.description_full = "15-ваттный усилитель оснащен одним 6-дюймовым полнодиапазонным динамиком специальной конструкции для более эффективного воспроизведения высоких частот и двумя каналами. Каждый канал оснащен собственным регулятором громкости, эффектом хоруса (для инструментального входа) с возможностью регулировки уровня и кнопкой включения, а также регуляторами эквалайзера Bass/Mid/Treble и выходом на наушники." +
-        "Корпус прибора выполнен в классическом стиле Fender - с коричневым текстурированным виниловым покрытием и хромированными металлическими деталями. Кроме бесспорно шикарного внешнего вида, корпус также характеризуется исключительной прочностью и надежностью.";
+    fourteen.description = "FENDER ACOUSTASONIC 15 represents a mobile and effective solution for amplifying an electroacoustic guitar and vocal microphone, possessing the flexibility and simplicity sufficient for use in various musical installations.";
+    fourteen.description_full = "The 15-watt amplifier is equipped with one 6-inch full-range speaker specially designed for more efficient high-frequency reproduction and two channels. Each channel has its own volume control, chorus effect (for the instrument input) with adjustable level and on/off button, as well as Bass/Mid/Treble EQ controls and a headphone output. " +
+        "The unit's cabinet is designed in classic Fender style - with brown textured vinyl covering and chrome metal details. Besides its undeniably elegant appearance, the cabinet is also characterized by exceptional durability and reliability.";
     fourteen.characteristics = [
         {
-            name: "Гитарное оборудование",
-            value: "Комбоусилители"
+            name: "Guitar equipment",
+            value: "Combo amplifiers"
         },
         {
-            name: "Назначение",
-            value: "Для акустических гитар"
+            name: "Purpose",
+            value: "For acoustic guitars"
         },
         {
-            name: "Цвет",
-            value: "Коричневый"
+            name: "Color",
+            value: "Brown"
         },
         {
-            name: "Мощность",
-            value: "15 Вт"
+            name: "Power",
+            value: "15W"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     fourteen.save();
     let fifteen = new model();
-    fifteen.name = "Гитарный процессор эффектов";
+    fifteen.name = "Guitar Effects Processor";
     fifteen.model = "FENDER TONE MASTER PRO";
     fifteen.slug = fifteen.name + ' ' + fifteen.model;
     fifteen.manufacturer = "Fender";
     fifteen.category = "equipment";
     fifteen.subCategory = "effect-pedals-and-processors";
-    fifteen.subCatName = 'Педали эффектов и прoцессоры';
+    fifteen.subCatName = 'Effect Pedals and Processors';
     fifteen.new = "";
     fifteen.popular = "";
     fifteen.price_action = 80976;
@@ -632,39 +641,40 @@ exports.seed = function (request, response) {
         big: ["/storage/product/15/1.png", "/storage/product/15/2.png", "/storage/product/15/3.png"],
         small: ["/storage/product/15/1-1.png", "/storage/product/15/2-1.png", "/storage/product/15/3-1.png"]
     };
-    fifteen.description = "Основные особенности гитарного процессора эффектов Fender Tone Master Pro: Более 100 моделей усилителей и эффектов качества Tone Master.";
-    fifteen.description_full = 'Основные особенности гитарного процессора эффектов Fender Tone Master Pro: Более 100 моделей усилителей и эффектов качества Tone Master. Более 6000 импульсных откликов, созданных Fender, с различными вариантами кабинетов и микрофонов. Поддержка IR-импульсов сторонних производителей. 7-дюймовый цветной сенсорный экран. Инновационные режимы Song и Setlist. 60-секундный стерео лупер. 4 петли эффектов для интеграции ваших любимых педалей. Инструментальные и XLR микрофонные входы. 10 фирменных футсвитчей/энкодеров с ЖК-дисплеями. Настоящее переливание хвостов задержки и реверберации для плавной смены пресетов. Обновление прошивки по USB. Совместимость с настольным приложением Tone Master Pro Control для редактирования, обмена и загрузки пресетов. Более 500 пользовательских пресетов с доступом к тысячам других с помощью приложения Tone Master Pro Control. Беспроводное соединение Bluetooth для воспроизведения звука с мобильного устройства. Стерео 1/4" выходной разъем для наушников для бесшумных занятий. Совместимость с педалью экспрессии Mission Engineering SP1-TMP для управления параметрами в реальном времени. Легкий вес, примерно 4 кг.';
+    fifteen.description = "Key features of Fender Tone Master Pro guitar effects processor: Over 100 Tone Master quality amp and effect models.";
+    fifteen.description_full = 'Key features of the Fender Tone Master Pro guitar effects processor: Over 100 Tone Master quality amp and effect models. More than 6,000 Fender-created impulse responses with various cabinet and microphone options. Third-party IR support. 7-inch color touchscreen. Innovative Song and Setlist modes. 60-second stereo looper. 4 effects loops for integrating your favorite pedals. Instrument and XLR microphone inputs. 10 custom footswitches/encoders with LCD displays. True spillover of delay and reverb tails for smooth preset transitions. USB firmware updates. Compatible with Tone Master Pro Control desktop application for editing, sharing, and loading presets. Over 500 user presets with access to thousands more using the Tone Master Pro Control app. Bluetooth wireless connection for audio playback from mobile devices. Stereo 1/4" headphone output for silent practice. Compatible with Mission Engineering SP1-TMP expression pedal for real-time parameter control. Lightweight, approximately 4 kg.';
     fifteen.characteristics = [
         {
-            name: "Тип",
-            value: "Процессоры эффектов"
+            name: "Type",
+            value: "Effects Processor"
         },
         {
-            name: "Эффекты",
+            name: "Effects",
             value: "Multi-effects"
         },
         {
-            name: "Количество эффектов",
+            name: "Number of effects",
             value: "100+"
         },
         {
-            name: "Встроенный тюнер",
-            value: "Нет"
+            name: "Built-in tuner",
+            value: "No"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     fifteen.save();
+
     let sixteen = new model();
-    sixteen.name = "Тюнер";
+    sixteen.name = "Tuner";
     sixteen.model = "FENDER AG6";
     sixteen.slug = sixteen.name + ' ' + sixteen.model;
     sixteen.manufacturer = "FENDER";
     sixteen.category = "equipment";
     sixteen.subCategory = "tuners-and-metronomes";
-    sixteen.subCatName = 'Тюнеры и метрономы';
+    sixteen.subCatName = 'Tuners and Metronomes';
     sixteen.new = "";
     sixteen.popular = "";
     sixteen.price_normal = 7120;
@@ -673,85 +683,86 @@ exports.seed = function (request, response) {
         big: ["/storage/product/1/1.png", "/storage/product/1/2.png", "/storage/product/1/3.png"],
         small: ["/storage/product/1/1-1.png", "/storage/product/1/2-1.png", "/storage/product/1/3-1.png"]
     };
-    sixteen.description = "Тюнер синего цвета FENDER AG6 от известной компании FENDER имеет дисплей с подсветкой, что позволяет настраивать его на затемненной сцене"
-    sixteen.description_full = 'Тюнер синего цвета FENDER AG6 от известной компании FENDER имеет дисплей с подсветкой, что позволяет настраивать его на затемненной сцене. К тому же отметим наличие разъемов входа 1/4" и выхода 1 / 4", встроенного микрофона и индикатора состояния батарейки, что станет огромным плюсом при живом выступлении.' +
-        "Представленный тюнер прекрасно подойдет начинающим гитаристам и их более опытным коллегам, для которых огромную роль играет высокое качество работы устройств и простота их в использовании.";
+    sixteen.description = "The blue FENDER AG6 tuner from the renowned FENDER company features a backlit display, allowing for tuning on a darkened stage"
+    sixteen.description_full = 'The blue FENDER AG6 tuner from the renowned FENDER company features a backlit display, allowing for tuning on a darkened stage. Additionally, we note the presence of 1/4" input and 1/4" output jacks, built-in microphone, and battery status indicator, which will be a huge plus during live performance.' +
+        "This tuner is perfect for beginning guitarists and their more experienced colleagues who value high-quality performance and ease of use in their devices.";
     sixteen.characteristics = [
         {
-            name: "Категория",
-            value: "Тюнер"
+            name: "Category",
+            value: "Tuner"
         },
         {
-            name: "Назначение",
-            value: "Гитарные"
+            name: "Purpose",
+            value: "Guitar"
         },
         {
-            name: "Цвет",
-            value: "Синий"
+            name: "Color",
+            value: "Blue"
         },
         {
-            name: "Режимы",
-            value: "Гитара, бас-гитара"
+            name: "Modes",
+            value: "Guitar, bass guitar"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     sixteen.save();
+
     let seventeen = new model();
-    seventeen.name = "Микрофон";
+    seventeen.name = "Microphone";
     seventeen.model = "MACKIE CARBON";
     seventeen.slug = seventeen.name + ' ' + seventeen.model;
     seventeen.manufacturer = "MACKIE";
     seventeen.category = "equipment";
     seventeen.subCategory = "headphones-and-microphones";
-    seventeen.subCatName = 'Наушники и микрофоны';
-    seventeen.new = "";
-    seventeen.popular = "";
+    seventeen.subCatName = 'Headphones and Microphones';
+    seventeen.new = "new";
+    seventeen.popular = "popular";
     seventeen.price_normal = 7125;
     seventeen.sale = "";
     seventeen.image = {
         big: ["/storage/product/17/1.png", "/storage/product/17/2.png", "/storage/product/17/3.png"],
         small: ["/storage/product/17/1-1.png", "/storage/product/17/2-1.png", "/storage/product/17/3-1.png"]
     };
-    seventeen.description = "USB-микрофоны серии EleMent от Mackie предоставляют качество и универсальность, необходимые для вывода звука на высший уровень: от безупречного воспроизведения вашего последнего стрима до ведения онлайн-встречи.";
-    seventeen.description_full = "БУДЬТЕ НА СВЯЗИ С ВАШЕЙ АУДИТОРИЕЙ. Независимо от вашей цели – запустить свой подкаст, стать следующим популярным стримером или сделать вашу музыку более заметной в соцсетях – звук имеет значение." +
-        "Если вы хотите получить потрясающее студийное звучание, как у вашего любимого ютубера, подкастера, стримера на Twitch или кого-либо другого, вы оказались в правильном месте. Получить профессиональный звук легче, чем вы могли думать." +
-        "Если вам нужна максимальная гибкость, микрофон Mackie Carbon обеспечит ее. В дополнение к возможностям подключения как у EM-USB, он предоставляет 5 диаграмм направленности, улучшенных легендарным предусилителем Onyx. Используйте микрофон со стильной стойкой, включенной в комплект, или закрепите на пантографе с помощью стандартного винтового крепления. Mackie Carbon подходит для создания контента, стриминга и мобильной записи.";
+    seventeen.description = "The EleMent series USB microphones from Mackie provide the quality and versatility needed to take your sound to the next level: from flawless reproduction of your latest stream to conducting online meetings.";
+    seventeen.description_full = "STAY CONNECTED WITH YOUR AUDIENCE. Whether your goal is to launch your podcast, become the next popular streamer, or make your music more noticeable on social media – sound matters. " +
+        "If you want to get amazing studio-quality sound like your favorite YouTuber, podcaster, Twitch streamer, or anyone else, you're in the right place. Getting professional sound is easier than you might think. " +
+        "If you need maximum flexibility, the Mackie Carbon microphone will provide it. In addition to the connectivity options of the EM-USB, it offers 5 polar patterns, enhanced by the legendary Onyx preamp. Use the microphone with the stylish included stand or mount it on a boom arm using the standard screw mount. Mackie Carbon is suitable for content creation, streaming, and mobile recording.";
     seventeen.characteristics = [
         {
-            name: "Преобразование сигнала",
-            value: "Конденсаторный"
+            name: "Signal conversion",
+            value: "Condenser"
         },
         {
-            name: "Направленность",
-            value: "Сменная направленность"
+            name: "Directionality",
+            value: "Multiple patterns"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Частотный диапазон",
-            value: "20 - 20000 Гц"
+            name: "Frequency response",
+            value: "20 - 20000 Hz"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
     seventeen.save();
     let eighteen = new model();
-    eighteen.name = "Гитара электроаккустическая";
-    eighteen.model = "FENDER CD-60SCE BLACK";
-    eighteen.slug = one.name + ' ' + one.model;
-    eighteen.manufacturer = "FENDER";
+    eighteen.name = "Digital Piano";
+    eighteen.model = "YAMAHA P-125B";
+    eighteen.slug = eighteen.name + ' ' + eighteen.model;
+    eighteen.manufacturer = "YAMAHA";
     eighteen.category = "keyboard-instrument";
     eighteen.subCategory = "digital-piano";
-    eighteen.subCatName = 'Цыфровые пианино и органы';
+    eighteen.subCatName = 'Digital Pianos and Organs';
     eighteen.new = "new";
-    eighteen.popular = "";
+    eighteen.popular = "popular";
     eighteen.price_action = 6120;
     eighteen.price_normal = 7120;
     eighteen.sale = "sale";
@@ -759,50 +770,48 @@ exports.seed = function (request, response) {
         big: ["/storage/product/18/1.png", "/storage/product/18/2.png", "/storage/product/18/3.png"],
         small: ["/storage/product/18/1-1.png", "/storage/product/18/2-1.png", "/storage/product/18/3-1.png"]
     };
-    eighteen.description = "FENDER CD-60SCE BLACK — новая электроакустическая гитара вкорпусе дредноут от знаменитого" +
-        " американского производителя, оснащенная высококачественной электроникой."
-    eighteen.description_full = "Верхняя дека CD-60SCE BLACK WN из цельной древесины ели," +
-        " что придает инструменту прекрасные акустические характеристики при любом стиле игры." +
-        " Нижняя дека и обечайка сделаны из махагони, что позволило не только получить эффектный внешний вид," +
-        " но и добиться сбалансированного звучания и впечатляющей громкости. Гриф профиля Fender Easy-to-Play" +
-        " также выполнен из махагони с однослойной черной окантовкой. Удобная форма грифа придется по душе" +
-        " как начинающим гитаристам, так и опытным профессиональным музыкантам. Накладка — орех, радиус 12″ (305мм)," +
-        " инкрустирована перламутровыми точками диаметром 3 мм. На грифе 20 ладов." +
-        "Пьезозвукосниматель Fishman с предусилителем и встроенным тюнером оснащен удобными регуляторами для настройки," +
-        " при этом сохраняется чистый, густой и насыщенный звук с прекрасным резонансом. Бридж выполнен из палисандра," +
-        " фурнитура — хромированная. Венецианский вырез с плавным изгибом дает удобный доступ к верхним ладам." +
-        " Розетка красиво оформлена перламутром.";
+    eighteen.description = "YAMAHA P-125B — a new compact digital piano featuring exceptional sound quality and natural keyboard touch, perfect for both beginners and experienced musicians."
+    eighteen.description_full = "The P-125B features Yamaha's renowned Pure CF Sound Engine, " +
+        "which reproduces the authentic tone of Yamaha's acclaimed CFIIIS concert grand piano. " +
+        "The Graded Hammer Standard (GHS) keyboard provides a heavier touch in the low keys and lighter touch in the high keys, " +
+        "just like an acoustic piano. The 88-key piano keyboard offers natural resistance and smooth response, " +
+        "making it perfect for developing proper finger technique. " +
+        "With 192-note polyphony, the P-125B can handle the most demanding musical passages, " +
+        "and the Duo mode allows the keyboard to be split into two identical zones, " +
+        "perfect for lessons or side-by-side practice. The built-in stereo speaker system " +
+        "delivers rich, full sound, while the Table EQ feature optimizes acoustics " +
+        "when playing on a flat surface.";
     eighteen.characteristics = [
         {
-            name: "Тип",
-            value: "Электроакустичеcкие"
+            name: "Type",
+            value: "Digital Piano"
         },
         {
-            name: "Количество струн",
-            value: "6"
+            name: "Number of keys",
+            value: "88"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Количество ладов",
-            value: "20"
+            name: "Polyphony",
+            value: "192"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
+            name: "Warranty",
+            value: "12 months"
         },
     ]
-    eighteen.save();
+
     let nineteen = new model();
-    nineteen.name = "Электрогитара";
-    nineteen.model = "IBANEZ GRG140 BKN";
+    nineteen.name = "Synthesizer";
+    nineteen.model = "KORG MINILOGUE XD";
     nineteen.slug = nineteen.name + ' ' + nineteen.model;
-    nineteen.manufacturer = "IBANEZ";
+    nineteen.manufacturer = "KORG";
     nineteen.category = "keyboard-instrument";
     nineteen.subCategory = "synthesizer";
-    nineteen.subCatName = 'Синтезаторы';
+    nineteen.subCatName = 'Synthesizers';
     nineteen.new = "";
     nineteen.popular = "popular";
     nineteen.price_normal = 7125;
@@ -811,49 +820,48 @@ exports.seed = function (request, response) {
         big: ["/storage/product/19/1.png", "/storage/product/19/2.png", "/storage/product/19/3.png"],
         small: ["/storage/product/19/1-1.png", "/storage/product/19/2-1.png", "/storage/product/19/3-1.png"]
     };
-    nineteen.description = "Компания IBANEZ представляет электрогитару GRG140. " +
-        "Эта электрогитара является фаворитом в своем классе. Свое положение она завоевала" +
-        " качеством звука и практичностью в использовании. Электрогитара GRG140 подойдет как новичку, так и более опытному музыканту.";
-    nineteen.description_full = "IBANEZ GRG140-BKN - это 6-струнная электрогитара с отличным звучанием." +
-        " Компания IBANEZ постаралась и смогла выразить стиль, четкость звука и качество сборки.Гитара имеет 24 лада." +
-        " Гриф гитары не очень широкий. Эта особенность очень удобна для всех, так как предоставляет отличный доступ к верхним ладам." +
-        " Гриф изготовлен из клена. Накладка на грифе сделана из палисандра. Корпус изготовлен из липы. Фурнитура хромированная." +
-        " Модель имеет схему звукоснимателей H-S-S, что отлично подходит для разных стилей музыки. " +
-        "Электрогитара имеет очень хороший звук для гитар этого класса, отлично сочетает в себе качество и приемлемую цену. " +
-        "IBANEZ GRG140 - отличный выбор для новичков и любителей.";
+    nineteen.description = "KORG MINILOGUE XD is a powerful analog/digital hybrid synthesizer that combines classic analog synthesis with modern digital effects and features.";
+    nineteen.description_full = "The MINILOGUE XD features a sophisticated four-voice analog synthesizer architecture " +
+        "with a unique hybrid digital multi-engine. The analog section includes 2 VCOs per voice, " +
+        "a cross modulation, a 2-pole voltage-controlled high-pass filter, and a 4-pole voltage-controlled " +
+        "low-pass filter with resonance. The digital multi-engine offers three different sound engines: " +
+        "noise, VPM (Variable Phase Modulation), and user slots for custom oscillators. " +
+        "The high-quality digital effects section includes modulation, reverb, and delay effects. " +
+        "The 37-key keyboard features velocity sensitivity for expressive playing. " +
+        "The intuitive interface includes an OLED display and real-time oscilloscope for visual feedback.";
     nineteen.characteristics = [
         {
-            name: "Тип",
-            value: "Электрогитара"
+            name: "Type",
+            value: "Analog/Digital Synthesizer"
         },
         {
-            name: "Количество струн",
-            value: "6"
+            name: "Number of voices",
+            value: "4"
         },
         {
-            name: "Цвет",
-            value: "Черный"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Количество ладов",
-            value: "24"
+            name: "Number of keys",
+            value: "37"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
-        },
+            name: "Warranty",
+            value: "12 months"
+        }
     ]
-    nineteen.save();
+
     let twenty = new model();
-    twenty.name = "Гитара";
-    twenty.model = "Fender PLAYER TELECASTER";
+    twenty.name = "MIDI Controller";
+    twenty.model = "ARTURIA KEYLAB 61 MKII";
     twenty.slug = twenty.name + ' ' + twenty.model;
-    twenty.manufacturer = "Fender";
+    twenty.manufacturer = "ARTURIA";
     twenty.category = "keyboard-instrument";
     twenty.subCategory = "midi-keyboard";
-    twenty.subCatName = 'MIDI-клавиатуры';
+    twenty.subCatName = 'MIDI Keyboards';
     twenty.new = "";
-    twenty.popular = "";
+    twenty.popular = "popular";
     twenty.price_action = 23425;
     twenty.price_normal = 24525;
     twenty.sale = "sale";
@@ -861,51 +869,46 @@ exports.seed = function (request, response) {
         big: ["/storage/product/20/1.png", "/storage/product/20/2.png", "/storage/product/20/3.png"],
         small: ["/storage/product/20/1-1.png", "/storage/product/20/2-1.png", "/storage/product/20/3-1.png"]
     };
-    twenty.description = "Идеально подходящая для сильной музыкальной атаки электрогитара" +
-        " Fender Player Telecaster HH PF – это чистый Fender до мозга костей. " +
-        "Ощущение, стиль и, самое главное, звук – все они здесь ждут, " +
-        "пока вы заставите их шептать или кричать для вашей музыки. ";
-    twenty.description_full = "IИнструмент достаточно гибкий, чтобы справиться практически со всем, " +
-        "что вы можете создать, и достаточно прочный, чтобы пережить любое выступление." +
-        " Эта рабочая лошадка – верный товарищ вашего музыкального видения. Разработанные для аутентичного" +
-        " звучания Fender звукосниматели серии Player стоят одной ногой в прошлом, но смотрят в будущее." +
-        "Бридж Telecaster струны-сквозь-корпус обладает седлами из изогнутого металла (bent-steel), " +
-        "чтобы немного оживить ваш тон. Гриф разработан для удобства и производительности. " +
-        "С профилем «Modern C» и гладким покрытием задней части он идеально подходит " +
-        "практически для любого стиля игры. Дополнительный лад дает доступ к четырем октавам музыкальных возможностей." +
-        " Каждая электрогитара серии Player Telecaster включает пластину на грифе с тисненой буквой «F»," +
-        " не оставляя никаких сомнений касательно происхождения инструмента.";
+    twenty.description = "ARTURIA KEYLAB 61 MKII is a professional MIDI keyboard controller designed for studio production and live performance, featuring premium key action and comprehensive DAW integration.";
+    twenty.description_full = "The KeyLab 61 MkII combines premium quality with total control, " +
+        "featuring Arturia's Pro-Feel key action for authentic playing response. " +
+        "The controller includes 16 RGB-backlit performance pads, 9 large faders, " +
+        "9 rotary encoders, and a comprehensive control center for seamless DAW integration. " +
+        "Built with a rugged aluminum chassis and wooden side panels, it's designed to withstand " +
+        "the rigors of both studio and stage use. The customizable control layout includes " +
+        "transport controls, track controls, and a multi-mode chord generator. " +
+        "Includes Analog Lab software with thousands of classic synthesizer and keyboard sounds.";
     twenty.characteristics = [
         {
-            name: "Тип",
-            value: "Электрогитара"
+            name: "Type",
+            value: "MIDI Controller"
         },
         {
-            name: "Количество струн",
-            value: "6"
+            name: "Number of keys",
+            value: "61"
         },
         {
-            name: "Цвет",
-            value: "3-Tone Sunburst"
+            name: "Color",
+            value: "White"
         },
         {
-            name: "Количество ладов",
-            value: "22"
+            name: "Connection",
+            value: "USB, MIDI"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
-        },
+            name: "Warranty",
+            value: "12 months"
+        }
     ]
-    twenty.save();
+
     let twenty_one = new model();
-    twenty_one.name = "Гитара";
-    twenty_one.model = "Fender PLAYER TELECASTER";
+    twenty_one.name = "Keyboard Stand";
+    twenty_one.model = "K&M OMEGA-PRO";
     twenty_one.slug = twenty_one.name + ' ' + twenty_one.model;
-    twenty_one.manufacturer = "Fender";
+    twenty_one.manufacturer = "K&M";
     twenty_one.category = "keyboard-instrument";
     twenty_one.subCategory = "equipment-keyboard";
-    twenty_one.subCatName = 'Оборудование для клавишных интрументов';
+    twenty_one.subCatName = 'Keyboard Equipment';
     twenty_one.new = "";
     twenty_one.popular = "";
     twenty_one.price_action = 23425;
@@ -915,41 +918,36 @@ exports.seed = function (request, response) {
         big: ["/storage/product/21/1.png", "/storage/product/21/2.png", "/storage/product/21/3.png"],
         small: ["/storage/product/21/1-1.png", "/storage/product/21/2-1.png", "/storage/product/21/3-1.png"]
     };
-    twenty_one.description = "Идеально подходящая для сильной музыкальной атаки электрогитара" +
-        " Fender Player Telecaster HH PF – это чистый Fender до мозга костей. " +
-        "Ощущение, стиль и, самое главное, звук – все они здесь ждут, " +
-        "пока вы заставите их шептать или кричать для вашей музыки. ";
-    twenty_one.description_full = "IИнструмент достаточно гибкий, чтобы справиться практически со всем, " +
-        "что вы можете создать, и достаточно прочный, чтобы пережить любое выступление." +
-        " Эта рабочая лошадка – верный товарищ вашего музыкального видения. Разработанные для аутентичного" +
-        " звучания Fender звукосниматели серии Player стоят одной ногой в прошлом, но смотрят в будущее." +
-        "Бридж Telecaster струны-сквозь-корпус обладает седлами из изогнутого металла (bent-steel), " +
-        "чтобы немного оживить ваш тон. Гриф разработан для удобства и производительности. " +
-        "С профилем «Modern C» и гладким покрытием задней части он идеально подходит " +
-        "практически для любого стиля игры. Дополнительный лад дает доступ к четырем октавам музыкальных возможностей." +
-        " Каждая электрогитара серии Player Telecaster включает пластину на грифе с тисненой буквой «F»," +
-        " не оставляя никаких сомнений касательно происхождения инструмента.";
+    twenty_one.description = "K&M OMEGA-PRO is a professional-grade keyboard stand featuring robust construction and versatile adjustment options for optimal stability and ergonomics.";
+    twenty_one.description_full = "The K&M OMEGA-PRO keyboard stand represents the pinnacle of stability " +
+        "and versatility for professional keyboard setups. Built with heavy-duty aluminum " +
+        "and steel components, this stand can support up to two keyboards with its dual-tier design. " +
+        "The height, angle, and width are fully adjustable to accommodate various keyboard sizes " +
+        "and player preferences. Quick-release levers allow for tool-free adjustment, while rubber " +
+        "padding protects your equipment and prevents slipping. The stand folds flat for easy " +
+        "transport and includes a carrying bag. Perfect for both studio and touring applications, " +
+        "the OMEGA-PRO combines professional build quality with practical features.";
     twenty_one.characteristics = [
         {
-            name: "Тип",
-            value: "Электрогитара"
+            name: "Type",
+            value: "Keyboard Stand"
         },
         {
-            name: "Количество струн",
-            value: "6"
+            name: "Material",
+            value: "Aluminum/Steel"
         },
         {
-            name: "Цвет",
-            value: "3-Tone Sunburst"
+            name: "Color",
+            value: "Black"
         },
         {
-            name: "Количество ладов",
-            value: "22"
+            name: "Weight capacity",
+            value: "80 kg"
         },
         {
-            name: "Гарантия",
-            value: "12 месяцев"
-        },
+            name: "Warranty",
+            value: "12 months"
+        }
     ]
     twenty_one.save();
 
