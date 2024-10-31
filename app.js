@@ -1,46 +1,28 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const bodyParser = require("body-parser");
+const logger = require('morgan');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const multer = require("multer");
+const path = require('path'); // Разрешение забирать статические файлы из папки
+const apiRoute = require("./routes/apiRouter");
 
 // Добавим модуль для разборки тела запроса
-const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
-
-// Для проверки запросов
-var cors = require('cors');
-app.use(cors());
-
-// Для ведения логов
-var logger = require('morgan');
-app.use(logger('dev'));
-
-// Для куков
-var cookieParser = require('cookie-parser');
-app.use(cookieParser());
-
-// Разрешение забирать статические файлы из папки
-var path = require('path');
+app.use(cors()); // Для проверки запросов
+app.use(logger('dev')); // Для ведения логов
+app.use(cookieParser()); // Для куков
 app.use(express.static(path.join(__dirname, 'public')));
-
-// С файлами
-const multer = require("multer");
-// Сообщим верменную папку для хранения файлов
-app.use(multer({dest: "public/upload"}).single("fileData"));
-
-// Маршруты
-const apiRoute = require("./routes/apiRouter");
-app.use(apiRoute);
+app.use(multer({ dest: "public/upload" }).single("fileData")); // Сообщим верменную папку для хранения файлов
+app.use(apiRoute); // Маршруты
 
 if (process.env.NODE_ENV === 'production') {
-
     app.use(express.static(path.join(__dirname, 'public')));
-
     app.get('*', (req, res) => {
-
         res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-
     });
-
 }
 
 module.exports = app
