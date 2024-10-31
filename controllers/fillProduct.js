@@ -680,8 +680,8 @@ exports.seed = function (request, response) {
     sixteen.price_normal = 7120;
     sixteen.sale = "sale";
     sixteen.image = {
-        big: ["/storage/product/1/1.png", "/storage/product/1/2.png", "/storage/product/1/3.png"],
-        small: ["/storage/product/1/1-1.png", "/storage/product/1/2-1.png", "/storage/product/1/3-1.png"]
+        big: ["/storage/product/16/1.png", "/storage/product/16/2.png", "/storage/product/16/3.png"],
+        small: ["/storage/product/16/1-1.png", "/storage/product/16/2-1.png", "/storage/product/16/3-1.png"]
     };
     sixteen.description = "The blue FENDER AG6 tuner from the renowned FENDER company features a backlit display, allowing for tuning on a darkened stage"
     sixteen.description_full = 'The blue FENDER AG6 tuner from the renowned FENDER company features a backlit display, allowing for tuning on a darkened stage. Additionally, we note the presence of 1/4" input and 1/4" output jacks, built-in microphone, and battery status indicator, which will be a huge plus during live performance.' +
@@ -753,6 +753,7 @@ exports.seed = function (request, response) {
         },
     ]
     seventeen.save();
+
     let eighteen = new model();
     eighteen.name = "Digital Piano";
     eighteen.model = "YAMAHA P-125B";
@@ -803,6 +804,7 @@ exports.seed = function (request, response) {
             value: "12 months"
         },
     ]
+    eighteen.save()
 
     let nineteen = new model();
     nineteen.name = "Synthesizer";
@@ -851,6 +853,7 @@ exports.seed = function (request, response) {
             value: "12 months"
         }
     ]
+    nineteen.save();
 
     let twenty = new model();
     twenty.name = "MIDI Controller";
@@ -900,6 +903,7 @@ exports.seed = function (request, response) {
             value: "12 months"
         }
     ]
+    twenty.save();
 
     let twenty_one = new model();
     twenty_one.name = "Keyboard Stand";
