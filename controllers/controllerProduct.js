@@ -65,7 +65,7 @@ exports.autocomplete = function (request, response) {
     }
 
     product.find(
-        { slug: { $regex: searchString, $options: "i" } }, // Исправленный вариант
+        { slug: { $regex: searchString, $options: "i" } },
         function (err, allData) {
             if (err) {
                 console.log(err);
