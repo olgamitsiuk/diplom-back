@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 
 class MailService {
-
 	constructor() {
 		this.transporter = nodemailer.createTransport({
 			host: "smtp.ukr.net",
@@ -13,21 +12,22 @@ class MailService {
 			}
 		})
 	}
+
 	async sendMail(to, message) {
 		await this.transporter.sendMail({
 			from: "react-app-olga@ukr.net",
 			to,
-			subject: 'Подписка на рассылку',
+			subject: 'Newsletter Subscription',
 			text: message,
 			html:
 				`
-					<div>
-						<h1>Спасибо, что подписались на рассылку!</h1>
-						<p>С уважением, Ольга Мицюк</p>
-						<p>Front-End Developer</p>
-						<p>Тел: +38(050) 19 45 116</p>
-					</div>
-				`
+                    <div>
+                        <h1>Thank you for subscribing to the newsletter!</h1>
+                        <p>Best regards, Olga Mitsiuk</p>
+                        <p>Front-End Developer</p>
+                        <p>Phone: +38(050) 19 45 116</p>
+                    </div>
+                `
 		})
 	}
 }
